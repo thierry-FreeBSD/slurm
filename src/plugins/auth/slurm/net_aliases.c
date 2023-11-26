@@ -38,6 +38,10 @@
 #include <jwt.h>
 #include <inttypes.h>
 #include <sys/types.h>
+#if defined(__FreeBSD__)
+#include <netinet/in.h>
+#include <sys/socket.h>
+#endif
 
 #include "slurm/slurm.h"
 #include "slurm/slurm_errno.h"
