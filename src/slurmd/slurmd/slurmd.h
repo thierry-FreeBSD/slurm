@@ -42,6 +42,9 @@
 #include <inttypes.h>
 #include <pthread.h>
 #include <sys/types.h>
+#if defined(__FreeBSD__)
+#include <limits.h>
+#endif
 
 #include "src/common/log.h"
 #include "src/common/list.h"
