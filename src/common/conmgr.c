@@ -47,6 +47,10 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/un.h>
+#if defined(__FreeBSD__)
+#include <sys/param.h>
+#include <sys/ucred.h>
+#endif
 #include <time.h>
 #include <unistd.h>
 
